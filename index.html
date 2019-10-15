@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" manifest="sample.appcache">
+<head>
+<meta charset="utf-8" />
+<meta name="author" content="Mark J Collins" />
+<meta name="description" content="Sample HTML document" />
+<style>
+
+	.a{
+		background-color: brown
+	}
+	.b{
+		background-color: forestgreen
+	}
+
+</style>
+</head>
+<body>
+		<script>
+		var x = 1;
+function testX(x1){
+	
+	console.log("original x value passed in: " + x1);
+	console.log("local-scoped x: " + x);
+}
+testX(x);
+console.log("global-scoped x: " + x);
+
+
+
+		</script>
+</body>
+</html>
